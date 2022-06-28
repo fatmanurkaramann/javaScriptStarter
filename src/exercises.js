@@ -15,7 +15,8 @@ const controlFunction = (number) => {
   let positiveDividorSum = 0;
   for (let i = 0; i < number; i++) {
     if (number % i === 0) {
-      positiveDividorSum += 1;
+      positiveDividorSum += i;
+      
     }
   }
   return positiveDividorSum;

@@ -57,7 +57,4 @@ function carp(...numbers) {
     console.log(carpim)
 }
 carp(1,2,3,5)
-
-let [karadeniz,marmara ]=["karadeniz","marmara"]
-
-console.log(regions[1])
+ 

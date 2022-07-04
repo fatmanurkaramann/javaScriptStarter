@@ -94,3 +94,38 @@ for (let i = 0; i < 50; i++) {
   
 }
 console.log("prime number: "+primeNumbers)
+
+function FirstFactorial(number) { 
+
+    let factorial = 1;
+      for (let i = 1; i <= number; i++) {
+        factorial *= i;
+      }
+      return factorial;
+        
+        }
+       
+    
+    console.log(FirstFactorial(readline()));
+
+    const newArray=(...numbers)=>{
+      let nums=[]
+     total=0
+      for (let i = 0; i < numbers.length; i++) {
+         
+          for (let j = i+1; j <numbers.length; j++) {
+             let total=numbers[i]+numbers[j]
+              if(numbers.indexOf(total)!==-1){
+                  if(nums.indexOf(total)==-1){
+                      nums.push(total)
+                  }
+              }
+              
+          }
+      }
+     
+      console.log(total)
+      
+      console.log(nums)
+  }
+  newArray(1,2,3,5,2)
